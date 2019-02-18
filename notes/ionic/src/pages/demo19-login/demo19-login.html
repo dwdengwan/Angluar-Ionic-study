@@ -1,0 +1,23 @@
+<!--
+  Generated template for the Demo19LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>demo19-login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <!-- <h2 [navPush]="main">登录到主页面</h2> -->
+  <h2 [navPush]="main" [navParams]="{id:100}">登录到主页面</h2>
+
+  <!-- 点击登录按钮，跳转到Main -->
+  <button ion-button (click)="jump()">登录</button>
+</ion-content>

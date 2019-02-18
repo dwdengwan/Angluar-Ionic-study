@@ -1,0 +1,69 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>demo04-list</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!-- 侧滑动的列表项 -->
+  <ion-list>
+    <ion-item-sliding  *ngFor="let tmp of myList">
+      <ion-item>{{tmp}}</ion-item>
+      <ion-item-options side="left">
+        <button ion-button color='danger'>删除</button>
+        <button ion-button color='secondary'>加入购物车</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <!-- 缩略图列表 -->
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="../../assets/imgs/3.jpg" alt="">
+      </ion-thumbnail>
+      商品1
+    </ion-item>
+  </ion-list>
+
+  <!-- 联系人列表 -->
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="../../assets/imgs/3.jpg" alt="">
+      </ion-avatar>
+      张三
+    </ion-item>
+  </ion-list>
+
+  <!-- 带有icon的列表 -->
+  <ion-list>
+    <ion-item>
+      <ion-icon item-start name='bluetooth'></ion-icon>
+      蓝牙设置
+      <ion-icon item-end name='arrow-forward'></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-icon item-start name='home'></ion-icon>
+      test01
+      <ion-icon item-end name="arrow-forward"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <!-- ionic普通列表 -->
+  <ion-list>
+    <ion-item>test01</ion-item>
+    <ion-item>test02</ion-item>
+    <ion-item>test03</ion-item>
+  </ion-list>
+
+  <ul>
+    <li>test01</li>
+    <li>test02</li>
+    <li>test03</li>
+  </ul>
+</ion-content>
